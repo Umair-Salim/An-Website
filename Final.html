@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To Forever</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe4e6, #fcefee, #f3e8ff);
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    main {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffe4e6, #fcefee, #f3e8ff);
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #822659;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+
+    h4 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #822659;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    p {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+      color: #822659;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      padding: 1rem 2rem;
+      background: linear-gradient(to right, #ffcad4, #ffe5ec);
+      color: #5f1832;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #ffc2d1, #ffdde4);
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <h4>Lets make a promise</h4>
+  <p>
+    🌸 “My love, as I sit here on our first anniversary, I can’t help but feel overwhelmed by all you’ve given me. Through every moment of pain, every fear, and every tear, you’ve been my constant strength. Your sacrifices haven’t gone unnoticed — I feel your love in everything you do, and I am so deeply thankful. We’ve faced storms that tested us, but here we are, standing strong, hand in hand. And I promise you this: no matter what tomorrow brings, my heart will always be yours. Our love is the one thing that will never be shaken. I’ll spend my life loving you, cherishing you, and fighting alongside you — forever.” 🌸
+  </p>
+
+  <main>
+  <h1>To Forever, My Love 🌸</h1>
+  
+  <button class="btn" onclick="celebrateAndRedirect()">To Forever</button>
+
+</main>
+
+  <script>
+    function celebrateAndRedirect() {
+      // Flower confetti burst
+      confetti({
+        particleCount: 200,
+        spread: 120,
+        origin: { y: 0.6 },
+        shapes: ['circle'],
+        colors: ['#ff69b4', '#ffb6c1', '#ffc0cb', '#fff0f5']
+      });
+
+      // Wait ~3 seconds, then go to home
+      setTimeout(function() {
+        window.location.href = "index.html";
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
